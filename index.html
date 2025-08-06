@@ -2,59 +2,59 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link href="./style.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ambershire Countdown</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       .text-shadow {
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
       }
-      
+
       .noise-bg {
         background: 
-          url('/images/noise.png'),
-          url('/images/bg2.jpg');
+          url('./images/noise.png'),
+          url('./images/bg2.jpg');
         background-repeat: repeat, no-repeat;
         background-size: auto, cover;
         background-position: 0 0, center;
         background-blend-mode: overlay;
       }
     </style>
-    <script type="module" crossorigin src="/assets/index-BQg2UR21.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-xvheT6pZ.css">
+    <script type="module" crossorigin src="/twow-countdown/assets/index-CHEOc2Tm.js"></script>
   </head>
   <body class="bg-gray-900 text-white">
     <div id="app" class="noise-bg relative h-screen flex flex-col justify-start items-center pt-24 pb-12">
       <div class="relative z-10 text-center">
-        <img src="/assets/logo-CxbXgOXB.png" alt="Turtle WoW Logo" class="mx-auto mb-8 h-32">
-         
+        <img src="./images/logo.png" alt="Turtle WoW Logo" class="mx-auto mb-8 h-32" />
+        
         <div class="flex flex-col md:flex-row md:space-x-12">
           <div id="release-countdown-container">
-              <p class="text-lg mb-2 text-shadow">Server Launch</p>
-              <div id="release-countdown" class="text-4xl font-mono text-shadow">
-                  <span id="release-days">00</span>d 
-                  <span id="release-hours">00</span>h 
-                  <span id="release-minutes">00</span>m 
-                  <span id="release-seconds">00</span>s
-              </div>
+            <p class="text-lg mb-2 text-shadow">Server Launch</p>
+            <div id="release-countdown" class="text-4xl font-mono text-shadow">
+              <span id="release-days">00</span>d 
+              <span id="release-hours">00</span>h 
+              <span id="release-minutes">00</span>m 
+              <span id="release-seconds">00</span>s
+            </div>
           </div>
-           
+
           <div id="reservation-countdown-container" class="mt-8 md:mt-0">
-              <p class="text-lg mb-2 text-shadow">Name Reservations</p>
-              <div id="reservation-countdown" class="text-4xl font-mono text-shadow">
-                  <span id="reservation-days">00</span>d 
-                  <span id="reservation-hours">00</span>h 
-                  <span id="reservation-minutes">00</span>m 
-                  <span id="reservation-seconds">00</span>s
-              </div>
+            <p class="text-lg mb-2 text-shadow">Name Reservations</p>
+            <div id="reservation-countdown" class="text-4xl font-mono text-shadow">
+              <span id="reservation-days">00</span>d 
+              <span id="reservation-hours">00</span>h 
+              <span id="reservation-minutes">00</span>m 
+              <span id="reservation-seconds">00</span>s
+            </div>
           </div>
         </div>
       </div>
+
       <div id="quote-container" class="absolute bottom-12 text-center px-4">
         <p id="quote-text" class="text-lg italic text-shadow"></p>
       </div>
     </div>
-    
-  </body>
+
   </body>
 </html>
